@@ -122,6 +122,12 @@
     return withFilters(on, ["show", "sort", "t", "type", "username", "after", "before", "count", "limit", "sr_detail"]);
   };
 
+  reddit.multi = function (multi) {
+    return fetch({
+      resource: "api/multi/" + multi
+    });
+  };
+
   function listing(on, extras) {
     extras = extras || [];
     return withFilters(on, ["after", "before", "count", "limit", "show"].concat(extras));
