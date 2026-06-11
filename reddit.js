@@ -180,7 +180,7 @@
   }
 
   function redditUrl(on) {
-    var url = "https://www.reddit.com/";
+    var url = "https://api.reddit.com/";
     var keys = function (object) {
       var ret = [];
       for (var prop in object) {
